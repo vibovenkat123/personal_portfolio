@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+    html {
+        scroll-behavior: smooth;
+    }
     a {
-        @apply text-sky-600 dark:text-sky-500 underline opacity-100 visited:text-fuchsia-800 dark:visited:text-fuchsia-600
+        @apply text-link underline opacity-100
     }
 }
