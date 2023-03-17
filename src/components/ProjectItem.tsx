@@ -31,7 +31,7 @@ export default function ProjectItem(props: { project: Project }) {
             className={"w-2/4 text-white hover:text-black"}
           >
             <button
-                aria-label={"Go to code button"}
+              aria-label={"Go to code button"}
               className={
                 "p-2 rounded-3xl px-6 border-softtext border-2 hover:bg-softtext w-full"
               }
