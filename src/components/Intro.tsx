@@ -23,7 +23,7 @@ export default function Intro() {
         </div>
         <div className={"flex gap-4"}>
           <a href={"#about"} className={"text-white"}>
-            <button
+            <button aria-label={"About button"}
               className={
                 "border-2 p-2 px-6 font-semibold rounded-3xl " +
                 "border-primary hover:text-black hover:bg-primary"
@@ -39,6 +39,7 @@ export default function Intro() {
             rel={"noreferrer noopener"}
           >
             <button
+                aria-label={"Github button"}
               className={
                 "border-2 p-2 px-6 font-semibold rounded-3xl " +
                 "border-secondary hover:text-black hover:bg-secondary"
@@ -48,7 +49,8 @@ export default function Intro() {
             </button>
           </a>
           <a href={"#projects"} className={"text-white"}>
-            <button
+
+            <button aria-label={"Projects button"}
               className={
                 "border-2 p-2 px-6 font-semibold rounded-3xl " +
                 "border-popouttext hover:text-black hover:bg-popouttext"

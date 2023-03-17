@@ -18,9 +18,9 @@ export default function ProjectItem(props: { project: Project }) {
           />
         </a>
         <div className="p-6">
-          <h3 className="text-lg md:text-xl mb-3 font-semibold">
+          <p className="text-lg md:text-xl mb-3 font-semibold">
             {props.project.name}
-          </h3>
+          </p>
           <p className={"text-sm"}>{props.project.description}</p>
         </div>
         <div className={"w-full flex justify-center"}>
@@ -31,6 +31,7 @@ export default function ProjectItem(props: { project: Project }) {
             className={"w-2/4 text-white hover:text-black"}
           >
             <button
+                aria-label={"Go to code button"}
               className={
                 "p-2 rounded-3xl px-6 border-softtext border-2 hover:bg-softtext w-full"
               }

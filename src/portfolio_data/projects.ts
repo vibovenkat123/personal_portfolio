@@ -12,7 +12,7 @@ const projects: Project[] = [
     name: "Review-GPT",
     link: "https://github.com/vibovenkat123/review-gpt",
     github: "https://github.com/vibovenkat123/review-gpt",
-    img: "https://raw.githubusercontent.com/vibovenkat123/review-gpt/main/assets/examples/usage/base_usage.png",
+    img: "https://raw.githubusercontent.com/vibovenkat123/review-gpt/main/assets/examples/usage/base_usage.webp",
     description:
       "An automated code review tool that uses GPT3.5 and GPT3 written in Go and uses GPT",
     id: id++,
@@ -21,7 +21,7 @@ const projects: Project[] = [
     name: "Pennyearned Server (WIP)",
     link: "https://github.com/vibovenkat123/pennyearned-server",
     github: "https://github.com/vibovenkat123/pennyearned-server",
-    img: "https://raw.githubusercontent.com/vibovenkat123/pennyearned-server/main/examples/users.png",
+    img: "https://raw.githubusercontent.com/vibovenkat123/pennyearned-server/main/examples/users.webp",
     description:
       "The server for a mobile app designed to help manage your budgets written with Go, Terraform, Docker, MJML/HTML, Postgres, Redis, and Aws serverless",
     id: id++,

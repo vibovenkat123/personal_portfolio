@@ -7,11 +7,11 @@ export default function About() {
             "bg-slate-600 text-white p-4 py-8 md:p-14 md:py-20 w-full flex flex-col"
           }
         >
-          <h1 className={"font-bold text-2xl md:text-3xl lg:text-4xl mb-8"}>
+          <h2 className={"font-bold text-2xl md:text-3xl lg:text-4xl mb-8"}>
             <span className={"text-secondary"}>About</span> Me
-          </h1>
+          </h2>
           <div className={"md:w-2/4 mr-20"}>
-            <p className="text-sm mb-4 font-bold text-gray-400">
+            <p className="text-sm mb-4 font-bold text-white">
               I'm a fullstack developer with knowledge in web development,
               backend, devops, and some mobile programming with swift. I am
               still a student so I am still learning new skills. My first
@@ -38,7 +38,7 @@ export default function About() {
               <br />
               <br />I am passionate about:
             </p>
-            <ul className="text-sm mb-4 font-bold text-gray-400">
+            <ul className="text-sm mb-4 font-bold">
               <li>🖌️ Clean, simple web development, with great UX</li>
               <li>🛠️ Learning on how stuff works under the hood</li>
               <li>👨‍🏫 Learning new things</li>

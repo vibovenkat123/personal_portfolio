@@ -36,121 +36,121 @@ export default function Skills() {
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
               alt={"HTML"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
               alt={"Typescript"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
               alt={"CSS"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
               alt={"Javascript"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
               alt={"React"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
               alt={"NextJS"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
               alt={"Vue"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
               alt={"Svelte"}
-              width={75}
+              width={90}
             />
             <img
               className="-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"
               alt={"Go"}
-              width={75}
+              width={90}
             />
             <img
               className="p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg"
               alt={"AWS"}
-              width={75}
+              width={90}
             />
             <img
               className="p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
               alt={"Postgres SQL"}
-              width={75}
+              width={90}
             />
             <img
               className="p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
               alt={"Docker"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
               alt={"Bash"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
               alt={"Terraform"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
               alt={"NodeJS"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"
               alt={"Ansible"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
               alt={"Python"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
               alt={"Swift"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
               alt={"GraphQL"}
-              width={75}
+              width={90}
             />
             <img
               className=" p-2 rounded-lg"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg"
               alt={"Lua"}
-              width={75}
+              width={90}
             />
           </div>
         </div>

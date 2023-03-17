@@ -8,7 +8,7 @@ module.exports = {
         primarytext: "#ff9480",
         secondary: "#ff9480",
         primary: "#18edbb",
-        link: "#1b95d1",
+        link: "#05c5ff",
         softtext: "#aeaed8",
       },
     },

@@ -8,10 +8,10 @@ export default function Projects(props: {}) {
     <>
       <section id={"projects"}>
         <div className="w-full flex flex-col justify-center p-4">
-          <h1 className={"font-bold text-2xl md:text-3xl lg:text-4xl mb-4"}>
+          <h2 className={"font-bold text-2xl md:text-3xl lg:text-4xl mb-4"}>
             {" "}
             <span className={"text-secondary"}>Notable</span> Projects{" "}
-          </h1>
+          </h2>
           <div className={"flex flex-row justify-center w-full"}>
             <div
               className={

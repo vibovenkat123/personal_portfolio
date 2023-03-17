@@ -8,7 +8,7 @@ export default function Arrow() {
             "w-14 motion-safe:hover:animate-pulse flex justify-center items-center"
           }
         >
-          <button>
+          <button aria-label={"Up arrow"}>
             <svg
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
