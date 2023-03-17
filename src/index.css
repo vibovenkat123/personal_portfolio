@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        scroll-behavior: smooth;
-    }
-    a {
-        @apply text-link underline opacity-100
-    }
+  html {
+    scroll-behavior: smooth;
+  }
+  a {
+    @apply text-link underline opacity-100;
+  }
 }
