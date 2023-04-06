@@ -12,27 +12,18 @@ export default function Intro() {
           </h1>
           <p className="text-md md:text-xl font-medium mb-4">
             {" "}
-            A Backend 🖥️, Frontend 🎨 and Devops Engineer 🔁 or what you may
-            call, a
-            <span className={"text-popouttext"}> "Fullstack Developer"</span>.
+            A Backend 🖥️, Frontend 🎨 and Devops Engineer 🔁
+            <br />
             <span className={"text-softtext"}>
-              {" "}
-              I like to create API's, CLI Tools, and frontends
+              I like to create API's, CLI Tools, and frontends.
+              <br />
+            </span>
+            <span className={"text-popouttext"}>
+              I am proficient in Typescript, Go, Shell, and a little bit of Python and Rust
             </span>
           </p>
         </div>
         <div className={"flex gap-4"}>
-          <a href={"#about"} className={"text-white"}>
-            <button
-              aria-label={"About button"}
-              className={
-                "border-2 p-2 px-6 font-semibold rounded-3xl " +
-                "border-primary hover:text-black hover:bg-primary"
-              }
-            >
-              About
-            </button>
-          </a>
           <a
             href={"https://github.com/vibovenkat123"}
             className={"text-white"}
@@ -43,7 +34,7 @@ export default function Intro() {
               aria-label={"Github button"}
               className={
                 "border-2 p-2 px-6 font-semibold rounded-3xl " +
-                "border-secondary hover:text-black hover:bg-secondary"
+                "border-primary hover:text-black hover:bg-primary"
               }
             >
               Github
@@ -54,7 +45,7 @@ export default function Intro() {
               aria-label={"Projects button"}
               className={
                 "border-2 p-2 px-6 font-semibold rounded-3xl " +
-                "border-popouttext hover:text-black hover:bg-popouttext"
+                "border-secondary hover:text-black hover:bg-secondary"
               }
             >
               Projects
