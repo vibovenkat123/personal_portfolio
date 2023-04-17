@@ -8,18 +8,18 @@ export default function Intro() {
         <div className="text-center px-4">
           <h1 className="text-2xl font-bold md:text-6xl text-white mb-8">
             👋 Hey, I am{" "}
-            <span className={"text-primarytext"}>Vaibhav Venkat</span>
+            <span className={"text-secondary underline"}>Vaibhav Venkat!</span>
           </h1>
           <p className="text-md md:text-xl font-medium mb-4">
             {" "}
             A Backend 🖥️, Frontend 🎨 and Devops Engineer 🔁
             <br />
-            <span className={"text-softtext"}>
+            <span className={"text-popouttext"}>
               I like to create API's, CLI Tools, and frontends.
               <br />
             </span>
-            <span className={"text-popouttext"}>
-              I am proficient in Typescript, Go, Shell, and a little bit of Python and Rust
+            <span className={"text-softtext"}>
+              I am proficient in Typescript and Go and a little bit of Python, Rust, and Haskell
             </span>
           </p>
         </div>
