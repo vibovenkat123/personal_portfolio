@@ -18,7 +18,7 @@ export default function ProjectHome() {
         <h1 className="text-9xl mt-5"> PROJECTS </h1>
         <h3 className="text-2xl mt-5 text-softtext"> What I have made </h3>
       </div>
-      <div className="w-screen h-screen flex justify-center items-center">
+      <div className="w-screen h-screen flex flex-col justify-center items-center">
         <Projects />
       </div>
     </main>
@@ -30,19 +30,13 @@ function Projects() {
   ));
   return (
     <>
-      <section id={"projects"}>
-        <div className="mt-20 flex flex-col justify-center p-4 py-8 md:p-14 md:py-20 h-screen w-screen">
-          <div className={"flex flex-row justify-center w-full"}>
-            <div
-              className={
-                "w-full grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-10"
-              }
-            >
-              {projectsItem}
-            </div>
-          </div>
-        </div>
-      </section>
+      <div
+        className={
+          "grid w-screen h-screen grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-7 p-5"
+        }
+      >
+        {projectsItem}
+      </div>
     </>
   );
 }
