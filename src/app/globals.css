@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    @apply bg-black;
+    @apply text-white;
+  }
+  a {
+    @apply text-link underline opacity-100;
+  }
+}
