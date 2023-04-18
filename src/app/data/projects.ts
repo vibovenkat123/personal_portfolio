@@ -18,7 +18,7 @@ const projects: Project[] = [
     id: id++,
   },
   {
-    name: "Pennyearned Server (WIP)",
+    name: "Pennyearned Server",
     link: "https://github.com/vibovenkat123/pennyearned-server",
     github: "https://github.com/vibovenkat123/pennyearned-server",
     img: "https://raw.githubusercontent.com/vibovenkat123/pennyearned-server/main/examples/users.webp",
@@ -36,10 +36,10 @@ const projects: Project[] = [
     id: id++,
   },
   {
-    name: "Pennyearned Mobile (WIP)",
+    name: "Pennyearned Mobile",
     link: "https://github.com/vibovenkat123/pennyearned-mobile",
     github: "https://github.com/vibovenkat123/pennyearned-mobile",
-    img: "https://i.imgur.com/Y3U3CFB.jpg",
+    img: "https://i.imgur.com/fTh7iaO.png",
     description:
       "An app designed to manage your budgets in a simple, easy way written in Swift and SwiftUI",
     id: id++,
