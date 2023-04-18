@@ -4,19 +4,25 @@ import { roboto_mono } from "../font";
 export default function ProjectHome() {
   return (
     <main className={roboto_mono.className}>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      />
       <div className="w-screen h-screen flex flex-col justify-center items-center">
-        <a className="text-white border-b-4 border-transparent  no-underline hover:border-white transition duration-300" href="/" >
+        <a
+          className="text-white border-b-4 border-transparent  no-underline hover:border-white transition duration-300"
+          href="/"
+        >
           <p className="text-7xl"> {"<--"} </p>
         </a>
-        <h1 className="text-9xl mt-5">  PROJECTS </h1>
+        <h1 className="text-9xl mt-5"> PROJECTS </h1>
         <h3 className="text-2xl mt-5 text-softtext"> What I have made </h3>
       </div>
       <div className="w-screen h-screen flex justify-center items-center">
         <Projects />
       </div>
     </main>
-  )
+  );
 }
 function Projects() {
   const projectsItem = projects.map((project) => (

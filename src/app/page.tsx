@@ -7,10 +7,10 @@ export default function Home() {
         <Intro name="Vaibhav Venkat" />
       </div>
     </main>
-  )
+  );
 }
 
-function Intro(props: {name: string}) {
+function Intro(props: { name: string }) {
   return (
     <>
       <section
@@ -31,7 +31,8 @@ function Intro(props: {name: string}) {
               <br />
             </span>
             <span className={"text-softtext"}>
-              I am proficient in Typescript and Go and a little bit of Python, Rust, and Haskell
+              I am proficient in Typescript and Go and a little bit of Python,
+              Rust, and Haskell
             </span>
           </p>
         </div>
