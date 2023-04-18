@@ -1,5 +1,7 @@
 import Head from "next/head";
 import "./globals.css";
+import { Roboto_Mono } from "next/font/google";
+const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -16,7 +18,9 @@ export default function RootLayout({
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
-      <body>{children}</body>
+      <body className={roboto_mono.className}>
+        {children}
+      </body>
     </html>
   );
 }

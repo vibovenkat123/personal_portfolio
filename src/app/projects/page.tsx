@@ -1,12 +1,12 @@
 import { type Project } from "../data/projects";
 import projects from "../data/projects";
-import { roboto_mono } from "../font";
+import Image from "next/image";
 export default function ProjectHome() {
   return (
-    <main className={roboto_mono.className}>
+    <main>
       <link
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=optional"
       />
       <div className="w-screen h-screen flex flex-col justify-center items-center">
         <a
@@ -57,10 +57,12 @@ function ProjectItem(props: { project: Project }) {
           rel={"noreferrer noopener"}
           target={"_blank"}
         >
-          <img
+          <Image
             src={props.project.img}
             alt={`${props.project.name} image example`}
             className="h-36 md:h-48 lg:h-52 object-contain"
+            width={370}
+            height={208}
           />
         </a>
         <div className="p-6">

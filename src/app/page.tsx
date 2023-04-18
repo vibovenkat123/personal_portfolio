@@ -1,8 +1,6 @@
-import { roboto_mono } from "./font";
-
 export default function Home() {
   return (
-    <main className={roboto_mono.className}>
+    <main>
       <div className="w-screen h-screen flex justify-center items-center">
         <Intro name="Vaibhav Venkat" />
       </div>
@@ -27,7 +25,7 @@ function Intro(props: { name: string }) {
             A Backend 🖥️, Frontend 🎨 and Devops Engineer 🔁
             <br />
             <span className={"text-popouttext"}>
-              I like to create API's, CLI Tools, and frontends.
+              I like to create API&apos;s, CLI Tools, and frontends.
               <br />
             </span>
             <span className={"text-softtext"}>

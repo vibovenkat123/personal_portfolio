@@ -1,8 +1,7 @@
 import { Tool, tools } from "../data/tools";
-import { roboto_mono } from "../font";
 export default function ToolsHome() {
   return (
-    <main className={roboto_mono.className}>
+    <main>
       <div className="mb-20 w-screen h-screen flex flex-col justify-center items-center">
         <a
           className="text-white border-b-4 border-transparent  no-underline hover:border-white transition duration-300"
@@ -21,7 +20,7 @@ export default function ToolsHome() {
 }
 
 function Tools() {
-  const toolItem = tools.map((tool) => <ToolItem tool={tool} />);
+  const toolItem = tools.map((tool) => <ToolItem key={tool.name} tool={tool} />);
   return (
     <div className="grid w-screen h-screen grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-7 p-5">
       {toolItem}
@@ -30,7 +29,7 @@ function Tools() {
 }
 function ToolItem(props: { tool: Tool }) {
   const typeLabel = props.tool.type.map((t) => (
-    <p className="border border-secondary text-sm text-white p-1 w-full rounded-lg m-3 flex justify-center items-center">
+    <p key={t} className="border border-secondary text-sm text-white p-1 w-full rounded-lg m-3 flex justify-center items-center">
       {t}
     </p>
   ));
