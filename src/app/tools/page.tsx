@@ -1,14 +1,15 @@
+import Link from "next/link";
 import { Tool, tools } from "../data/tools";
 export default function ToolsHome() {
   return (
     <main>
       <div className="mb-20 w-screen h-screen flex flex-col justify-center items-center">
-        <a
+        <Link
           className="text-white border-b-4 border-transparent  no-underline hover:border-white transition duration-300"
           href="/"
         >
           <p className="text-5xl md:text-6xl lg:text-7xl"> {"<--"} </p>
-        </a>
+        </Link>
         <h1 className="text-7xl md:text-8xl lg:text-9xl"> TOOLS </h1>
         <h3 className="text-2xl mt-5 text-popouttext"> The tools I use </h3>
       </div>

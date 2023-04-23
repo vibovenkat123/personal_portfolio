@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -35,7 +37,7 @@ function Intro(props: { name: string }) {
           </p>
         </div>
         <div className={"flex gap-4"}>
-          <a
+          <Link
             href={"https://github.com/vibovenkat123"}
             className={"text-white"}
             target={"_blank"}
@@ -50,8 +52,8 @@ function Intro(props: { name: string }) {
             >
               Github
             </button>
-          </a>
-          <a href={"/projects"} className={"text-white"}>
+          </Link>
+          <Link href={"/projects"} className={"text-white"}>
             <button
               aria-label={"Projects button"}
               className={
@@ -61,8 +63,8 @@ function Intro(props: { name: string }) {
             >
               Projects
             </button>
-          </a>
-          <a href={"/tools"} className={"text-white"}>
+          </Link>
+          <Link href={"/tools"} className={"text-white"}>
             <button
               aria-label={"Tools button"}
               className={
@@ -72,7 +74,7 @@ function Intro(props: { name: string }) {
             >
               Tools
             </button>
-          </a>
+          </Link>
         </div>
       </section>
     </>

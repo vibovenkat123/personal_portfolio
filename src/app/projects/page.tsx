@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { type Project } from "../data/projects";
 import projects from "../data/projects";
 import Image from "next/image";
@@ -9,12 +10,12 @@ export default function ProjectHome() {
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0&display=optional"
       />
       <div className="w-screen h-screen flex flex-col justify-center items-center">
-        <a
+        <Link
           className="text-white border-b-4 border-transparent  no-underline hover:border-white transition duration-300"
           href="/"
         >
           <p className="text-5xl md:text-6xl lg:text-7xl"> {"<--"} </p>
-        </a>
+        </Link>
         <h1 className="text-7xl md:text-8xl lg:text-9xl mt-5"> PROJECTS </h1>
         <h3 className="text-2xl mt-5 text-softtext"> What I have made </h3>
       </div>
@@ -45,7 +46,7 @@ function ProjectItem(props: { project: Project }) {
   return (
     <>
       <div className="text-center flex flex-col border-2 rounded-lg p-2 border-white justify-around">
-        <a
+        <Link
           href={props.project.link}
           className="cursor-pointer flex justify-center items-center"
           rel={"noreferrer noopener"}
@@ -58,7 +59,7 @@ function ProjectItem(props: { project: Project }) {
             width={370}
             height={208}
           />
-        </a>
+        </Link>
         <div className="p-6">
           <p className="text-lg md:text-xl font-semibold">
             {props.project.name}
@@ -66,7 +67,7 @@ function ProjectItem(props: { project: Project }) {
           <p className={"text-sm"}>{props.project.description}</p>
         </div>
         <div className={"w-full flex justify-center"}>
-          <a
+          <Link
             href={props.project.github}
             target={"_blank"}
             rel={"noreferrer noopener"}
@@ -80,7 +81,7 @@ function ProjectItem(props: { project: Project }) {
             >
               Code
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </>
