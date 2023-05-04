@@ -46,7 +46,7 @@ function Intro(props: { name: string }) {
               aria-label={"Blog button"}
               className={
                 "border-2 p-2 px-6 font-semibold rounded-3xl " +
-                "border-white"
+                "border-white hover:text-black hover:bg-white"
               }
             >
               Blog
