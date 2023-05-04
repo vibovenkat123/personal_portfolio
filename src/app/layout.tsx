@@ -18,9 +18,7 @@ export default function RootLayout({
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
       </Head>
-      <body className={roboto_mono.className}>
-        {children}
-      </body>
+      <body className={roboto_mono.className}>{children}</body>
     </html>
   );
 }

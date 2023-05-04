@@ -38,6 +38,21 @@ function Intro(props: { name: string }) {
         </div>
         <div className={"flex gap-4"}>
           <Link
+            href={"https://blog.vaibhavvenkat.com"}
+            className={"text-white"}
+            target={"_blank"}
+          >
+            <button
+              aria-label={"Blog button"}
+              className={
+                "border-2 p-2 px-6 font-semibold rounded-3xl " +
+                "border-white"
+              }
+            >
+              Blog
+            </button>
+          </Link>
+          <Link
             href={"https://github.com/vibovenkat123"}
             className={"text-white"}
             target={"_blank"}

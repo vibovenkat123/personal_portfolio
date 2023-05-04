@@ -21,7 +21,9 @@ export default function ToolsHome() {
 }
 
 function Tools() {
-  const toolItem = tools.map((tool) => <ToolItem key={tool.name} tool={tool} />);
+  const toolItem = tools.map((tool) => (
+    <ToolItem key={tool.name} tool={tool} />
+  ));
   return (
     <div className="grid w-screen h-screen grid-cols-1 md:grid-cols-4 xl:grid-cols-6 gap-7 p-5">
       {toolItem}
@@ -29,17 +31,11 @@ function Tools() {
   );
 }
 function ToolItem(props: { tool: Tool }) {
-  const typeLabel = props.tool.type.map((t) => (
-    <p key={t} className="border border-secondary text-sm text-white p-1 w-full rounded-lg m-3 flex justify-center items-center">
-      {t}
-    </p>
-  ));
   return (
     <>
       <div className="text-center flex flex-col justify-around tems-center border-2 rounded-lg p-1 border-softtext">
         <p className="text-2xl text-popouttext">{props.tool.name}</p>
         <p className="mt-2">{props.tool.description}</p>
-        <div className="flex w-full justify-between">{typeLabel}</div>
       </div>
     </>
   );
