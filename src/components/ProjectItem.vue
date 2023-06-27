@@ -44,17 +44,17 @@ const projects = props.projects as Project[];
 </template>
 
 <style scoped>
+.grid_item {
+  gap: 2em;
+  width: 100%;
+  display: flex;
+}
+@media (max-width: 612px) {
   .grid_item {
-    gap: 2em;
-    width: 100%;
-    display: flex;
+    gap: em;
   }
-  @media (max-width: 612px) {
-    .grid_item {
-      gap: em;
-    }
-  }
-  .project_item {
-    width: 75%;
-  }
+}
+.project_item {
+  width: 75%;
+}
 </style>
