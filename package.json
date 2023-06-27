@@ -11,8 +11,9 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/vercel": "^3.5.1",
     "@astrojs/vue": "^2.2.1",
-    "astro": "^2.7.0",
+    "astro": "^2.7.1",
     "vue": "^3.3.4"
   },
   "devDependencies": {
