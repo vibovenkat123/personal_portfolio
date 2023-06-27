@@ -1,0 +1,32 @@
+---
+import type { Project } from "../content";
+import ProjectItem from "./ProjectItem.vue"
+type Props = {
+  projects: Project[];
+};
+
+const props = Astro.props as Props;
+---
+
+<div class="main">
+  <div class="grid">
+    {
+      props.projects.map((project, idx) => (
+        <ProjectItem projects={props.projects} index={idx} />
+      ))
+    }
+  </div>
+</div>
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(1em, 1fr));
+  }
+  @media (min-width: 612px) {
+    .grid {
+      width: 85%;
+    }
+  }
+    
+</style>
+

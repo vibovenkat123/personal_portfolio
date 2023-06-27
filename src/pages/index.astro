@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/Layout.astro';
+import {projects} from '../content'
+import  Card  from '../components/Card.astro';
+---
+<Layout title="Vaibhav Venkat • Home">
+	<main>
+        <h1>Vaibhav Venkat</h1>
+        <p>
+            Hey there, I'm <strong>Vaibhav</strong>. 
+            <br />
+            I like building <strong>apps and websites</strong> as well as
+            reading and writing about tech. 
+            <br />
+            I enjoy 
+            <strong>web development</strong>, <strong>app development</strong>, 
+            and creating <strong>web servers</strong>.
+        </p>
+        <p>
+            I'm currently building a wellness app called <a href="https://github.com/vibovenkat123/Tranquil">Tranquil</a> and
+            learning <a href="https://www.ocaml.org/">OCaml</a> and <a href="https://elixir-lang.org/">Elixir</a>.
+            <br />
+            I use the terminal <strong>A lot</strong>
+        </p>
+        <div class="projects">
+            <h2>Projects</h1>
+            <Card projects={projects} />
+        </div>
+        <div class="footer">
+            <a rel="noreferrer noopener" target="_blank"  href="https://github.com/vibovenkat123">Github</a>
+            <a rel="noreferrer noopener" target="_blank" href="https://twitter.com/vaibhavven">Twitter</a>
+        </div>
+	</main>
+</Layout>
+
+<style>
+    h1, h2 {
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 2em;
+    }
+    h1 {
+        margin-bottom: 3em;
+    }
+    p {
+        margin-bottom: 3em;
+    }
+    .footer {
+        display: flex;
+        gap: 5em;
+        margin-top: 5em;
+    }
+</style>
+

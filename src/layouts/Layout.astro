@@ -1,0 +1,83 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description">
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+        <div class="main_cont">
+            <div class="part_width">
+                <slot />
+            </div>
+        </div>
+	</body>
+</html>
+<style is:global>
+    a {
+        color: #454545;
+    }
+    .main_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+	:root {
+		--accent: 124, 58, 237;
+		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background-color: #F6F6F6;
+        color: #454545;
+	}
+    @media (prefers-color-scheme:  dark) {
+        a {
+            color: #d1d1d1;
+        }
+        html {
+            background-color: #1A1A1A;
+            color: #d1d1d1;
+        }
+    }
+	code {
+		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+    .part_width {
+        width: 95%;
+        padding: 2em;
+    }
+    @media (min-width: 835px) {
+        .part_width {
+            width: 80%;
+        }
+    }
+    @media (min-width: 1068px) {
+        .part_width {
+            width: 60%;
+        }
+    }
+    @media (min-width: 1377px) {
+        .part_width {
+            width: 40%;
+        }
+    }
+    @media (min-width: 1662px) {
+        .part_width {
+            width: 34%;
+        }
+    }
+</style>
