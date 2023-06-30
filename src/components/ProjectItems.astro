@@ -1,11 +1,11 @@
 ---
 import type { Project } from "../content";
 import ProjectItem from "./ProjectItem.vue";
-type Props = {
+export interface Props {
   projects: Project[];
 };
 
-const props = Astro.props as Props;
+const props = Astro.props;
 ---
 
 <div class="main">

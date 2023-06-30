@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 const date = new Intl.DateTimeFormat("en-US", { dateStyle: "long" })
-type Post = {
+export type Post = {
   url: string,
   frontmatter: {
     title: string;
@@ -12,7 +12,7 @@ type Post = {
 const posts: Post[] = await Astro.glob("./posts/*.mdx") as Post[]
 ---
 
-<Layout title="Vaibhav Venkat • Home">
+<Layout title="Vaibhav Venkat • Blog">
   <main>
     <a href="/">← Back</a>
     <h1>My Blog</h1>

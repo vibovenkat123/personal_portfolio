@@ -1,0 +1,12 @@
+---
+import Layout from "./Layout.astro";
+import type { Post } from "../pages/blog/index.astro";
+export interface Props extends Post {}
+const {frontmatter} = Astro.props
+---
+<Layout title={frontmatter.title}>
+  <a href="/blog">← Back</a>
+  <h1> {frontmatter.title} </h1>
+  <slot />
+</Layout>
+  
