@@ -25,6 +25,15 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+  @font-face {
+    font-family: "JetBrains Mono"; 
+    src: url("/fonts/jetbrains.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+ 
   a {
     color: #454545;
   }
@@ -44,7 +53,7 @@ const { title } = Astro.props;
     );
   }
   html {
-    font-family: system-ui, sans-serif;
+    font-family: "Poppins", system-ui, sans-serif;
     background-color: #f6f6f6;
     color: #454545;
   }
@@ -58,7 +67,7 @@ const { title } = Astro.props;
     }
   }
   code {
-    font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+    font-family: "JetBrains Mono", Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
   .part_width {

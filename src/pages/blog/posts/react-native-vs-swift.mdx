@@ -1,0 +1,180 @@
+---
+layout: '../../../layouts/Layout.astro'
+title: "React Native vs Swift"
+description: "My opinion on which is better after building two seperate apps 
+with them"
+date: "2023-06-29"
+---
+
+import Code from "../../../components/Code.vue"
+export const components = {code: Code}
+
+
+[← Back](/blog)
+# {frontmatter.title}
+
+I recently built two different apps, one with React Native and another with 
+Swift. After building both apps, I have concluded what I **think** is the better framework.
+
+**Note**: The reason I am not including Flutter is because:
+
+A) I haven't worked with it\
+B) It doesn't produce Native code at the end
+
+## TLDR
+Swift. It is a great language and has all the packages you need (no need to fear
+of deprecating packages), and allows amazing APIs. 
+
+React Native definitely would be faster for developing two apps.
+
+<img src="/images/react-native-vs-swift/tldr.png" 
+alt="Graph for react native vs swift" height={400} />
+
+
+## Developer Experience (DX)
+
+In terms of developer experience, I think that both React Native and Swift are
+fine. If you come from a primary web background, you might find React Native a 
+tad bit easier but in most cases, React Native has a very similar syntax to 
+SwiftUI.
+
+The main difference comes within the languages Swift vs React + TS and the APIs 
+they offer. React is fairly hard to start with if you have never used it 
+before, but since I used it before I would say it is a little easier than
+Swift. Both TS and Swift are still really good languages, however, in some
+edge cases Swift can be simpler.
+
+**Verdict:** Depends on your background, however, I would say Swift is a little
+bit easier to learn and use.
+
+**Typescript**
+```ts
+const Page = {
+  START: "START",
+  GAME1: "GAME1",
+  GAME2: "GAME2",
+  GAME3: "GAME3",
+} as const
+
+type AllowedPages = typeof Page[keyof typeof Page]
+
+function displayPage(page: AllowedPages) {
+  switch (page) {
+    case Page.START:
+      console.log("start")
+    case Page.GAME1:
+      console.log("game1")
+    case Page.GAME2:
+      console.log("game2")
+    case Page.GAME3:
+      console.log("game3")
+  }
+}
+
+displayPage(Page.START)
+```
+
+**Swift**
+```swift
+enum Page {
+  case START
+  case GAME1
+  case GAME2
+  case GAME3
+}
+
+func displayPage(page: Page) {
+  switch page {
+    case .START:
+      print("start")
+    case .GAME1:
+      print("game1")
+    case .GAME2:
+      print("game2")
+    case .GAME3:
+      print("game3")
+  }
+}
+
+displayPage(Page.START)
+```
+
+## Performance
+
+In terms of performance, **Swift is the winner**.
+
+Simply trying to run React Native
+on two platforms means that the performance is going to take a hit.
+
+Swift is also a compiled language, meaning that it will naturally run faster than React Native. However, React Native sometimes beats Swift in terms of 
+memory usage.
+
+**Verdict:** Swift, however, most of the time React Native is good enough.
+
+<img src="/images/react-native-vs-swift/performance.png" 
+alt="Graph for performance between Swift and React Native" height={400} />
+
+## Speed of development
+
+This is where **React Native truly shines**.
+
+React Native is a framework that allows you to build apps for both iOS and
+Android simultaneously. This means you can build two apps in a very short
+amount of time.
+
+**Verdict:** React Native
+
+<img src="/images/react-native-vs-swift/speed_of_dev.png" 
+alt="Speed of development between React Native and Swift" height={500} />
+
+## Stability
+
+This is where **Swift shines**.
+
+Since Swift was made by Apple, it is very stable and is guaranteed to be
+supporting new features for a long time.
+
+React Native, on the other hand, is a framework made by Facebook. This means
+that it will always be one step behind Apple, which can be a problem if you
+want to try new features. It also means that React Native can be deprecated
+at any time.
+
+I don't think we need a graph for this one.
+
+**Verdict:** Swift
+
+## Packages
+
+This is where **React Native can be the worst**.
+
+Even though React Native has a lot of packages, it is very hard to find a
+package that is not deprecated or will support new features. 
+
+This is because React Native doesn't have a true official package list, and the community is forced to make its own. You are essentially relying on a couple
+or even one person to maintain a package.
+
+Swift (and Flutter) on the other hand, have an official package manager. Apple
+makes sure that all packages are up to date and will support new features.
+Google makes official packages for Flutter as well.
+
+The last thing you want is a new version of iOS to come out and the package
+you depended on to be deprecated and not supported for that version.
+
+**Verdict**: Swift, it has more stable packages.
+
+<img src="/images/react-native-vs-swift/packages.png" 
+alt="Number of packages" height={300} />
+
+## Conclusion
+
+In the end, I think that **Swift is the better framework**. 
+
+It is more stable, has better performance, and has more stable packages.
+
+However, React Native is still a great framework. It is very fast to develop
+two apps at once, and it is very easy to learn if you are coming from a web
+background, but Swift is still the better framework.
+
+The major factor that made me choose Swift over React Native is the fact that
+it is more stable. I don't want to be worrying about if my app will break if a
+new version of iOS comes out, or if a package will be deprecated.

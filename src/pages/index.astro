@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { projects } from "../content";
-import Card from "../components/Card.astro";
+import ProjectItems from "../components/ProjectItems.astro";
 ---
 
 <Layout title="Vaibhav Venkat • Home">
@@ -27,13 +27,11 @@ import Card from "../components/Card.astro";
     </p>
     <div class="projects">
       <h2>Projects</h2>
-      <Card projects={projects} />
+      <ProjectItems projects={projects} />
     </div>
     <div class="footer">
       <a
-        rel="noreferrer noopener"
-        target="_blank"
-        href="https://blog.vaibhavvenkat.com">Blog</a
+        href="/blog/">Blog</a
       >
       <a
         rel="noreferrer noopener"
@@ -52,8 +50,6 @@ import Card from "../components/Card.astro";
 <style>
   h1,
   h2 {
-    font-size: 1.3em;
-    font-weight: 600;
     margin-bottom: 2em;
   }
   h1 {
@@ -65,6 +61,6 @@ import Card from "../components/Card.astro";
   .footer {
     display: flex;
     gap: 5em;
-    margin-top: 5em;
+    margin-top: 2em;
   }
 </style>
