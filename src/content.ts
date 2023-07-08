@@ -16,9 +16,9 @@ export const projects = [
     link: "https://github.com/vibovenkat123/pennyearned-mobile",
   },
   {
-    name: "Pioneer",
-    description: "A website designed to share images with other people",
-    link: "https://github.com/vibovenkat123/pioneer",
+    name: "AACOD",
+    description: "A way to automate your environment in Typescript",
+    link: "https://aacod-docs.vaibhavvenkat.com",
   },
   {
     name: "vaibhavvenkat.com",
